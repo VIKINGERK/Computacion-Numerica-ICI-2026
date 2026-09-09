@@ -1,27 +1,6 @@
-# 1. Crear el archivo .gitignore para NO subir el entorno virtual ni archivos basura
-@"
-venv/
-.venv/
-__pycache__/
+﻿**/venv/
+**/.venv/
+**/__pycache__/
 *.pyc
 .DS_Store
 .vscode/
-"@ | Set-Content -Path ".gitignore" -Encoding UTF8
-
-# 2. Inicializar el repositorio Git local
-git init
-
-# 3. Agregar todos los archivos al área de preparación
-git add .
-
-# 4. Crear el primer commit
-git commit -m "Laboratorio 1: Análisis de error y propagación en dólar observado (SII)"
-
-# 5. Cambiar el nombre de la rama principal a main
-git branch -M main
-
-# 6. Conectar tu carpeta local con el repo de GitHub (Reemplaza TU_USUARIO por tu usuario real de GitHub)
-git remote add origin https://github.com/TU_USUARIO/problema2-dolar-sii.git
-
-# 7. Subir todo el código, gráficos e informe a GitHub
-git push -u origin main
