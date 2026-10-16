@@ -6,7 +6,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 
-from funciones import FUNCIONES, TOL, MAX_IT, raiz_referencia
+from funciones import FUNCIONES, Tolerancia, Max_iteraciones, raiz_referencia
 import metodos as m
 
 SRC = Path(__file__).resolve().parents[1]
@@ -22,7 +22,7 @@ COLORES = dict(zip(ORDEN_METODOS,
 MARCAS = dict(zip(ORDEN_METODOS, ["o", "s", "^", "D", "v", "P"]))
 
 
-def correr_metodos(fun, tol=TOL, max_it=MAX_IT):
+def correr_metodos(fun, tol=Tolerancia, max_it=Max_iteraciones):
     f, df, d2f, g = fun["f"], fun["df"], fun["d2f"], fun["g"]
     return {
         "Bisección": m.biseccion(f, fun["a"], fun["b"], tol, max_it),
@@ -59,7 +59,7 @@ def main():
                 else "tangencia al eje: f(2)=0 y f'(2)=0, f(x) ≥ 0 en todo R")
         ambiente.append([fun["categoria"], fun["texto"], fun["a"], fun["b"], fa, fb,
                          fa * fb, fun["x0"], fun["x0_secante"], fun["x1"],
-                         TOL, MAX_IT, demo])
+                         Tolerancia, Max_iteraciones, demo])
 
         res = correr_metodos(fun)
         resultados[fun["id"]] = res
@@ -142,7 +142,7 @@ def graficar_convergencia(fun, res):
         es = [max(abs(x - raiz), 1e-17) for (_, x, _, _) in h]
         ax.semilogy(ks, es, marker=MARCAS[nombre], ms=4, color=COLORES[nombre], label=nombre)
         hay = True
-    ax.axhline(TOL, color="gray", ls="--", lw=1, label="tol = 1e-6")
+    ax.axhline(Tolerancia, color="gray", ls="--", lw=1, label="tol = 1e-6")
     ax.set_xlabel("iteración")
     ax.set_ylabel("|error| = |x - raíz|  (escala log)")
     ax.set_title(f"Convergencia - {fun['texto']}")
@@ -176,9 +176,9 @@ def graficar_resumen(resultados):
             elif r["estado"] == "no_aplica":
                 ax.text(x, 1, "N/A", ha="center", rotation=90, fontsize=7, color=COLORES[nombre])
             else:
-                ax.bar(x, MAX_IT, ancho, color=COLORES[nombre], hatch="////", alpha=0.5,
+                ax.bar(x, Max_iteraciones, ancho, color=COLORES[nombre], hatch="////", alpha=0.5,
                        edgecolor="red", label=nombre if i == 0 else None)
-                ax.text(x, MAX_IT + 1, "✗", ha="center", fontsize=9, color="red")
+                ax.text(x, Max_iteraciones + 1, "✗", ha="center", fontsize=9, color="red")
     ax.set_xticks(range(len(ids)))
     ax.set_xticklabels(etiquetas, fontsize=8)
     ax.set_ylabel("iteraciones (tol = 1e-6)")
