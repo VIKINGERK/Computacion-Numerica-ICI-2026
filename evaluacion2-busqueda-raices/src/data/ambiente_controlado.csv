@@ -1,0 +1,7 @@
+categoria,funcion,a,b,f(a),f(b),f(a)*f(b),x0 (punto fijo/Newton),x0 (secante),x1 (secante),tolerancia,tope_iteraciones,demostracion_de_la_raiz
+Polinómica (raíz simple),f(x) = x^3 − x − 2,1.0,2.0,-2.0,4.0,-8.0,1.5,1.0,2.0,1e-06,100,cambio de signo (Bolzano): f(a)·f(b) < 0
+Polinómica (raíz doble),f(x) = (x − 2)^2,1.0,3.0,1.0,1.0,1.0,1.2,1.2,1.5,1e-06,100,"tangencia al eje: f(2)=0 y f'(2)=0, f(x) ≥ 0 en todo R"
+Logarítmica,f(x) = ln(x) + x − 4,2.0,3.0,-1.3068528194400546,0.09861228866811,-0.1288717474773561,2.5,2.0,3.0,1e-06,100,cambio de signo (Bolzano): f(a)·f(b) < 0
+Exponencial,f(x) = e^(−x) − x,0.0,1.0,1.0,-0.6321205588285577,-0.6321205588285577,0.5,0.0,1.0,1e-06,100,cambio de signo (Bolzano): f(a)·f(b) < 0
+Trigonométrica,f(x) = cos(x) − x,0.0,1.0,1.0,-0.45969769413186023,-0.45969769413186023,0.5,0.0,1.0,1e-06,100,cambio de signo (Bolzano): f(a)·f(b) < 0
+Mixta,f(x) = sqrt(x) − cos(x),0.1,1.0,-0.6787763992611879,0.45969769413186023,-0.312031945571495,0.55,0.1,1.0,1e-06,100,cambio de signo (Bolzano): f(a)·f(b) < 0
