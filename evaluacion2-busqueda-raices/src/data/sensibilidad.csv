@@ -1,0 +1,99 @@
+funcion_id,metodo,parametro,estado,iteraciones,raiz
+polinomica_simple,Bisección,"[1.0, 2.0]",convergio,20,1.5213804244995117
+polinomica_simple,Falsa posición,"[1.0, 2.0]",convergio,12,1.5213794617901568
+polinomica_simple,Bisección,"[1.4, 1.6]",convergio,18,1.521379852294922
+polinomica_simple,Falsa posición,"[1.4, 1.6]",convergio,5,1.5213796225129321
+polinomica_simple,Bisección,"[0.0, 5.0]",convergio,23,1.5213793516159058
+polinomica_simple,Falsa posición,"[0.0, 5.0]",convergio,75,1.5213757141663884
+polinomica_simple,Bisección,"[-10.0, 10.0]",convergio,25,1.5213793516159058
+polinomica_simple,Falsa posición,"[-10.0, 10.0]",no_converge,100,1.4749641662232003
+polinomica_simple,Bisección,"[1.0, 100.0]",convergio,27,1.5213800594210625
+polinomica_simple,Falsa posición,"[1.0, 100.0]",no_converge,100,1.0196034544128363
+polinomica_simple,Newton-Raphson,x0=1.5,convergio,2,1.5213798059647863
+polinomica_simple,Newton mejorado,x0=1.5,convergio,2,1.5213796094955705
+polinomica_simple,Secante,"x0=1.5, x1=2.0",convergio,4,1.5213796947986198
+polinomica_simple,Punto fijo,x0=1.5,convergio,7,1.5213796792714414
+polinomica_simple,Newton-Raphson,x0=1.0,convergio,5,1.521379709733148
+polinomica_simple,Newton mejorado,x0=1.0,convergio,5,1.5213797067341104
+polinomica_simple,Secante,"x0=1.0, x1=1.5",convergio,4,1.5213797070770883
+polinomica_simple,Punto fijo,x0=1.0,convergio,8,1.5213796042392627
+polinomica_simple,Newton-Raphson,x0=5.0,convergio,7,1.5213797068106267
+polinomica_simple,Newton mejorado,x0=5.0,convergio,13,1.5213796951573402
+polinomica_simple,Secante,"x0=5.0, x1=5.5",convergio,9,1.5213798073597584
+polinomica_simple,Punto fijo,x0=5.0,convergio,9,1.521379776303323
+polinomica_simple,Newton-Raphson,x0=50.0,convergio,12,1.5213798676877046
+polinomica_simple,Newton mejorado,x0=50.0,convergio,24,1.5213797043298136
+polinomica_simple,Secante,"x0=50.0, x1=50.5",convergio,17,1.5213798573837607
+polinomica_simple,Punto fijo,x0=50.0,convergio,10,1.5213797550404404
+polinomica_simple,Newton-Raphson,x0=0.5,convergio,37,1.5213797068056854
+polinomica_simple,Newton mejorado,x0=0.5,convergio,28,1.5213797067117003
+polinomica_simple,Secante,"x0=0.5, x1=1.0",convergio,9,1.5213797067532695
+polinomica_simple,Punto fijo,x0=0.5,convergio,9,1.5213796758620428
+polinomica_simple,Newton-Raphson,x0=0.58,convergio,18,1.5213797068046475
+polinomica_simple,Newton mejorado,x0=0.58,convergio,13,1.5213797068044752
+polinomica_simple,Secante,"x0=0.58, x1=1.08",convergio,8,1.5213797067408679
+polinomica_simple,Punto fijo,x0=0.58,convergio,9,1.5213796786083302
+polinomica_simple,Newton-Raphson,x0=0.0,convergio,30,1.5213797068094823
+polinomica_simple,Newton mejorado,x0=0.0,convergio,4,1.5213797068029238
+polinomica_simple,Secante,"x0=0.0, x1=0.5",convergio,8,1.5213797067400059
+polinomica_simple,Punto fijo,x0=0.0,convergio,9,1.5213796569658358
+polinomica_simple,Newton-Raphson,x0=-1.0,convergio,31,1.5213797068094823
+polinomica_simple,Newton mejorado,x0=-1.0,convergio,39,1.5213797067679034
+polinomica_simple,Secante,"x0=-1.0, x1=-0.5",convergio,8,1.5213797062564196
+polinomica_simple,Punto fijo,x0=-1.0,convergio,9,1.5213796042392627
+trigonometrica,Newton-Raphson,x0=0.5,convergio,3,0.7390851339208068
+trigonometrica,Newton mejorado,x0=0.5,convergio,3,0.7390851321653727
+trigonometrica,Secante,"x0=0.5, x1=1.0",convergio,4,0.739085132900112
+trigonometrica,Punto fijo,x0=0.5,convergio,33,0.7390855938689606
+trigonometrica,Newton-Raphson,x0=1.0,convergio,3,0.739085133385284
+trigonometrica,Newton mejorado,x0=1.0,convergio,3,0.7390851331587
+trigonometrica,Secante,"x0=1.0, x1=1.5",convergio,4,0.7390851407237271
+trigonometrica,Punto fijo,x0=1.0,convergio,33,0.7390845495752126
+trigonometrica,Newton-Raphson,x0=3.0,convergio,5,0.7390852043758361
+trigonometrica,Newton mejorado,x0=3.0,convergio,5,0.7390851330133488
+trigonometrica,Secante,"x0=3.0, x1=3.5",convergio,7,0.7390851192973997
+trigonometrica,Punto fijo,x0=3.0,convergio,34,0.7390845713222184
+trigonometrica,Newton-Raphson,x0=10.0,convergio,92,0.7390851332153524
+trigonometrica,Newton mejorado,x0=10.0,convergio,21,0.7390851332148751
+trigonometrica,Secante,"x0=10.0, x1=10.5",convergio,7,0.7390850434409028
+trigonometrica,Punto fijo,x0=10.0,convergio,32,0.739084641952711
+trigonometrica,Newton-Raphson,x0=100.0,convergio,8,0.7390851340144209
+trigonometrica,Newton mejorado,x0=100.0,convergio,87,0.7390851331995281
+trigonometrica,Secante,"x0=100.0, x1=100.5",convergio,6,0.7390851476522862
+trigonometrica,Punto fijo,x0=100.0,convergio,33,0.7390855424225312
+logaritmica,Newton-Raphson,x0=2.5,convergio,3,2.9262710624428703
+logaritmica,Newton mejorado,x0=2.5,convergio,3,2.926271062444928
+logaritmica,Secante,"x0=2.5, x1=3.0",convergio,3,2.926271062739667
+logaritmica,Punto fijo,x0=2.5,convergio,13,2.9262714540300196
+logaritmica,Newton-Raphson,x0=0.01,convergio,6,2.9262710622466033
+logaritmica,Newton mejorado,x0=0.01,falla,1,-0.0014601207311660137
+logaritmica,Secante,"x0=0.01, x1=0.51",convergio,6,2.926271059547667
+logaritmica,Punto fijo,x0=0.01,convergio,16,2.926270685152204
+logaritmica,Newton-Raphson,x0=10.0,convergio,4,2.926271062441901
+logaritmica,Newton mejorado,x0=10.0,convergio,3,2.926271062444513
+logaritmica,Secante,"x0=10.0, x1=10.5",convergio,5,2.92627106295913
+logaritmica,Punto fijo,x0=10.0,convergio,15,2.9262706197465134
+logaritmica,Newton-Raphson,x0=50.0,convergio,5,2.926271062443274
+logaritmica,Newton mejorado,x0=50.0,convergio,4,2.9262710686262117
+logaritmica,Secante,"x0=50.0, x1=50.5",convergio,6,2.9262710637779996
+logaritmica,Punto fijo,x0=50.0,convergio,17,2.926270800937551
+logaritmica,Newton-Raphson,x0=-1.0,falla,0,
+logaritmica,Newton mejorado,x0=-1.0,falla,0,
+logaritmica,Secante,"x0=-1.0, x1=-0.5",falla,0,
+logaritmica,Punto fijo,x0=-1.0,falla,0,
+polinomica_doble,Newton-Raphson,x0=1.2,convergio,10,1.99921875
+polinomica_doble,Newton mejorado,x0=1.2,convergio,1,2.0
+polinomica_doble,Secante,"x0=1.2, x1=1.7",convergio,13,1.9993539703903096
+polinomica_doble,Punto fijo,x0=1.2,no_converge,100,1.990756748638755
+polinomica_doble,Newton-Raphson,x0=0.0,convergio,11,1.9990234375
+polinomica_doble,Newton mejorado,x0=0.0,convergio,1,2.0
+polinomica_doble,Secante,"x0=0.0, x1=0.5",convergio,16,1.9993582201304954
+polinomica_doble,Punto fijo,x0=0.0,falla,5,3263444.0
+polinomica_doble,Newton-Raphson,x0=1.9,convergio,7,1.99921875
+polinomica_doble,Newton mejorado,x0=1.9,convergio,1,2.0
+polinomica_doble,Secante,"x0=1.9, x1=2.4",convergio,13,1.9992792792792793
+polinomica_doble,Punto fijo,x0=1.9,no_converge,100,1.9911086905233362
+polinomica_doble,Newton-Raphson,x0=5.0,convergio,12,2.000732421875
+polinomica_doble,Newton mejorado,x0=5.0,convergio,1,2.0
+polinomica_doble,Secante,"x0=5.0, x1=5.5",convergio,17,2.0007870179515046
+polinomica_doble,Punto fijo,x0=5.0,falla,4,599882558.0
